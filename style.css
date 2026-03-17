@@ -253,17 +253,10 @@ body {
 }
 
 .name{
-    position: relative;   /* FIX */
-    margin-top: 12px;     /* spacing */
-    padding: 8px 20px;
-    border-radius: 50px;
-    background-color: var(--color-text-pink);
+    position: absolute;
+    padding: 0px 40px;
+    bottom: -20px;
     border: 3px solid var(--color-black);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
 }
 
 .date__of__birth span, .name span{
@@ -293,22 +286,19 @@ body {
 
 .content .right .image{
     position: relative;
-    width: 220px;              /* fixed responsive size */
-    height: 220px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 5px solid var(--color-black);
-    margin: 0 auto;
+    border: 6px solid var(--color-black);
 }
 
 .content .right .image img{
     width: 100%;
-    height: 100%;              /* IMPORTANT */
-    object-fit: cover;         /* perfect fill */
-    object-position: center top; /* face visible */
+    object-fit: cover;
+
 }
 
 .cricle{
@@ -829,21 +819,16 @@ body {
 
     }
 
-/* MOBILE: PROFILE IMAGE FIX */
-.content .right .image{
-    width: 160px;
-    height: 160px;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.content .right .image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;          /* circle fill */
-    object-position: center 20%; /* face upar rahe (adjust 0–30%) */
-}}
+    .content .right .image {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border: 6px solid var(--color-black);
+    }
 
     .name {
         position: absolute;
@@ -869,6 +854,80 @@ body {
 
 }
 
+@media (max-width:600px){
+
+    .box__letter .letter__border{
+      width:92vw;
+      height:auto;
+      padding:15px;
+    }
+
+    .letter__border .letter{
+      padding:10px;
+    }
+
+    .letter__border .letter .content__letter{
+      flex-direction:column;
+      gap:10px;
+      padding-bottom:30px;
+    }
+
+    .content__letter .left{
+      width:100%;
+      border:none;
+      text-align:center;
+    }
+
+    .content__letter .right{
+      width:100%;
+    }
+
+    .content__letter .right .text__letter{
+      font-size:18px;
+      margin-top:10px;
+      line-height:1.5;
+    }
+
+    .surprise-btn{
+      width:100%;
+      max-width:260px;
+      font-size:14px;
+    }
+
+    #mewmew{
+      bottom:60px;
+      left:270px;
+      width:60px;
+    }
+
+    /* love gif position mobile */
+    .content__letter .right .love__img{
+      position:absolute;
+      top: -110px;
+      right: 25%;
+      transform:translateX(50%);
+    }
+
+    /* MOBILE: PROFILE IMAGE FIX */
+.content .right .image{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.content .right .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* circle fill */
+    object-position: center 20%; /* face upar rahe (adjust 0–30%) */
+}
+    .love__img img{
+      width:80px;
+    }
+
+}
 
 /* PREMIUM SURPRISE BUTTON */
 .surprice{
