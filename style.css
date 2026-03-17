@@ -908,21 +908,6 @@ body {
       transform:translateX(50%);
     }
 
-    /* MOBILE: PROFILE IMAGE FIX */
-.content .right .image{
-    width: 160px;
-    height: 160px;
-    margin: 0 auto;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.content .right .image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;          /* circle fill */
-    object-position: center 20%; /* face upar rahe (adjust 0–30%) */
-}
     .love__img img{
       width:80px;
     }
